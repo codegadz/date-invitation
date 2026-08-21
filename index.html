@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Will You? 👀</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         PAGE 1 — POSTER
+    =================================================== -->
+
+    <div
+        class="poster-page"
+        id="questionPage"
+    >
+
+        <img
+            src="poster.png"
+            class="poster"
+            alt="Will you go on a date with me?"
+        >
+
+
+        <button
+            class="yes-button"
+            id="yesBtn"
+            type="button"
+        >
+            YES
+        </button>
+
+
+        <button
+            class="no-button"
+            id="noBtn"
+            type="button"
+        >
+
+            <span
+                class="smoke-container"
+                id="smokeContainer"
+            ></span>
+
+            <span class="no-text">
+                NO
+            </span>
+
+        </button>
+
+
+        <div
+            class="attempt-text"
+            id="attemptText"
+        ></div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         PAGE 2 — GOOD CHOICE
+    =================================================== -->
+
+    <div
+        class="success-page hidden"
+        id="successPage"
+    >
+
+        <div class="success-content">
+
+            <div class="heart">
+                🖤
+            </div>
+
+            <p class="tiny">
+                YOU CHOSE WISELY.
+            </p>
+
+            <h1>
+                GOOD CHOICE.
+            </h1>
+
+            <p class="subtitle">
+                I was hoping you'd say yes. 👀
+            </p>
+
+
+            <div class="date-details">
+
+                <div>
+
+                    <span>📅</span>
+
+                    <section>
+
+                        <small>
+                            DATE
+                        </small>
+
+                        <strong>
+                            22nd of August, 2026
+                        </strong>
+
+                    </section>
+
+                </div>
+
+
+                <div>
+
+                    <span>📍</span>
+
+                    <section>
+
+                        <small>
+                            LOCATION
+                        </small>
+
+                        <strong>
+                            Newport Cinemas, Resorts World Manila
+                        </strong>
+
+                    </section>
+
+                </div>
+
+
+                <div>
+
+                    <span>⏰</span>
+
+                    <section>
+
+                        <small>
+                            TIME
+                        </small>
+
+                        <strong>
+                            12:15 or 2:30 am
+                        </strong>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+
+            <p class="closing">
+
+                The scary part is over.<br>
+
+                Now comes the fun part.
+
+            </p>
+
+        </div>
+
+
+        <div
+            class="ghosts"
+            id="ghosts"
+        ></div>
+
+
+        <button
+            class="next-button"
+            id="nextBtn"
+            type="button"
+        >
+            NEXT →
+        </button>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         PAGE 3 — TICKETS
+    =================================================== -->
+
+    <div
+        class="ticket-page hidden"
+        id="ticketPage"
+    >
+
+        <div
+            class="ghosts"
+            id="ticketGhosts"
+        ></div>
+
+
+        <div class="ticket-content">
+
+            <div class="ticket-warning">
+                ⚠ TRANSMISSION RECEIVED ⚠
+            </div>
+
+
+            <h1>
+                ONE MORE THING...
+            </h1>
+
+
+            <div class="ticket-message">
+
+                <p>
+                    Tickets are not booked yet.
+                </p>
+
+
+                <p>
+                    May food inclusions kasi and
+                    walang option na tanggalin.
+                </p>
+
+
+                <p class="eerie-emphasis">
+                    Trust me...
+                </p>
+
+
+                <p>
+                    Pangit yung popcorn and Coke.
+                </p>
+
+
+                <p class="eerie-emphasis">
+                    Hindi worth it sa ₱300 per ticket.
+                </p>
+
+            </div>
+
+
+            <div class="ticket-footer">
+                DECISION PENDING
+            </div>
+
+        </div>
+
+
+        <!-- PAGE 3 NEXT -->
+
+        <button
+            class="next-button"
+            id="ticketNextBtn"
+            type="button"
+        >
+            NEXT →
+        </button>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         PAGE 4 — PAYMENT CHOICE
+    =================================================== -->
+
+    <div
+        class="choice-page hidden"
+        id="choicePage"
+    >
+
+        <div
+            class="ghosts"
+            id="choiceGhosts"
+        ></div>
+
+
+        <div class="choice-content">
+
+            <div class="choice-warning">
+                ⚠ FINAL DECISION REQUIRED ⚠
+            </div>
+
+
+            <h1>
+                WE'RE GOING<br>
+                TO BUY TICKETS.
+            </h1>
+
+
+            <p class="choice-subtitle">
+                Dun na mismo. 😏
+            </p>
+
+
+            <div class="choice-box">
+
+                <p>
+                    So...
+                </p>
+
+                <p class="big-choice-text">
+                    who's gonna pay?
+                </p>
+
+            </div>
+
+
+            <div class="payment-buttons">
+
+                <button
+                    type="button"
+                    class="payment-button runaway"
+                    id="splitBtn"
+                >
+                    SPLIT
+                </button>
+
+
+                <button
+                    type="button"
+                    class="payment-button runaway"
+                    id="yourTreatBtn"
+                >
+                    YOUR TREAT 😌
+                </button>
+
+
+                <button
+                    type="button"
+                    class="payment-button my-treat"
+                    id="myTreatBtn"
+                >
+                    MY TREAT
+                </button>
+
+            </div>
+
+
+            <p
+                class="payment-message"
+                id="paymentMessage"
+            ></p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         PAGE 5 — EMAIL
+    =================================================== -->
+
+    <div
+        class="email-page hidden"
+        id="emailPage"
+    >
+
+        <div
+            class="ghosts"
+            id="emailGhosts"
+        ></div>
+
+
+        <div class="email-content">
+
+
+            <div class="email-warning">
+                ⚠ ONE LAST THING ⚠
+            </div>
+
+
+            <div class="email-heart">
+            </div>
+
+
+            <h1>
+                WHERE SHOULD<br>
+                I SEND THE MESSAGE?
+            </h1>
+
+
+            <p class="email-subtitle">
+                Enter your email below. 👀
+            </p>
+
+
+            <form
+                id="emailForm"
+                class="email-form"
+            >
+
+                <input
+                    type="email"
+                    name="email"
+                    id="emailInput"
+                    placeholder="your@email.com"
+                    autocomplete="email"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    id="sendEmailBtn"
+                    class="send-button"
+                >
+                    SEND IT
+                </button>
+
+            </form>
+
+
+            <p
+                class="email-status"
+                id="emailStatus"
+            ></p>
+
+
+            <p class="email-small">
+                Don't worry. I won't spam you. 😏
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         PAGE 6 — COMPLETE
+    =================================================== -->
+
+    <div
+        class="final-page hidden"
+        id="finalPage"
+    >
+
+        <div class="final-content">
+
+
+            <p class="final-small">
+                TRANSMISSION COMPLETE
+            </p>
+
+
+            <h1>
+                MESSAGE<br>
+                DELIVERED.
+            </h1>
+
+
+            <p>
+                Check your inbox or spam folder for the message.
+            </p>
+
+
+            <div class="final-line"></div>
+
+
+            <span>
+                See you on our date. 😏
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         EMAILJS
+    =================================================== -->
+
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    =================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
